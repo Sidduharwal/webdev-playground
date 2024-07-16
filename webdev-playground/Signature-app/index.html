@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>sIGNATURE</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="top">
+        <div class="black">
+          <p>Text color picker</p>
+          <input class="form-control" type="color" id="colorpicker" />
+        </div>
+        <div class="black">
+          <p>Background</p>
+          <input class="form-control" type="color" id="canvascolor" />
+        </div>
+        <div class="black">
+          <p>Font size</p>
+          <select id="fontSize">
+            <option value="" disabled selected>Select font size</option>
+            <option value="5">5px</option>
+            <option value="10">10px</option>
+            <option value="20">20px</option>
+            <option value="30">30px</option>
+            <option value="40">40px</option>
+          </select>
+        </div>
+      </div>
+      <canvas class="canvas" id="mycanvas" width="800" height="500"> </canvas>
+      <div class="bottom">
+        <button type="button" class="btn btn-danger" id="clearButton">
+          Clear
+        </button>
+        <button type="button" class="btn btn-success" id="saveButton">
+          Save & Download
+        </button>
+        <button type="button" class="btn btn-warning" id="retrieveButton">
+          Retrieve & Download
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
